@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+h1 {
+    @apply text-4xl font-bold mb-6 text-center text-blue-600;
+}
+
+h2 {
+    @apply text-2xl font-semibold mb-4 text-gray-700;
+}
+
+input {
+    @apply border border-gray-300 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+button {
+    @apply bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200;
+}
+
+ul {
+    @apply list-disc pl-5;
+}
+
+li {
+    @apply mb-2;
+}
+
+.navbar {
+    @apply bg-gray-800 p-4 shadow-md;
+}
+
+.navbar a {
+    @apply text-white hover:text-blue-300 transition duration-200;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #3498db; /* Change color as needed */
+  border-radius: 50%;
+  width: 60px; /* Size of the spinner */
+  height: 60px; /* Size of the spinner */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
